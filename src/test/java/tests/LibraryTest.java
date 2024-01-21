@@ -1,5 +1,6 @@
 package tests;
 import org.junit.Test;
+import software.ulpgc.kata6.Library;
 import static org.junit.Assert.assertEquals;
 import static org.junit.Assert.assertTrue;
 import static org.junit.Assert.assertFalse;
@@ -21,7 +22,7 @@ public class LibraryTest {
     public void removeBook(){
         Library library = new Library();
         library.addBook("1984");
-        library.removeBook("1984")
-        assertFalse(library.contains("1984"));
+        library.removeBook("1984");
+        assertFalse(library.containsBook("1984"));
     }
 }
